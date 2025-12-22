@@ -1,0 +1,60 @@
+:root { --gold: #c5a059; --dark: #121212; --success: #28a745; }
+body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8f9fa; }
+        
+/* Efeito Parallax */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/MarcosAntonioTenente/temp/main/duster1.jpg');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.divider-parallax {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/MarcosAntonioTenente/temp/main/duster3.jpg');
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Navbar Blur */
+.navbar { background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); transition: 0.3s; }
+        
+/* Floating WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Cards e Tabelas */
+.card-custom { border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: 0.3s; }
+.card-custom:hover { transform: translateY(-10px); }
+.table-modern { background: white; border-radius: 15px; overflow: hidden; }
+.table-modern thead { background: var(--dark); color: white; }
+.highlight-box { border-left: 5px solid var(--gold); padding: 20px; background: #fff; border-radius: 0 15px 15px 0; }
